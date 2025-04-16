@@ -190,3 +190,16 @@ RunService.RenderStepped:Connect(function()
         end
     end
 end)
+
+-- Message en bas à droite après l'exécution
+local Message = Instance.new("TextLabel")
+Message.Parent = ScreenGui
+Message.Size = UDim2.new(0, 400, 0, 40)
+Message.Position = UDim2.new(1, -410, 1, -50)
+Message.Text = "script by AGTV v1.1 universal aimbot\ndiscord.gg/Qq36NvRjfm"
+Message.TextColor3 = Color3.new(1, 1, 1)
+Message.BackgroundTransparency = 1
+Message.Font = Enum.Font.Gotham
+Message.TextScaled = true
+Message.TextStrokeTransparency = 0.8
+Message.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
